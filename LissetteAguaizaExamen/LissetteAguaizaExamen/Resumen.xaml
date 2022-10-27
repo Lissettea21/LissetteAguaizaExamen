@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LissetteAguaizaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+            <Label x:Name="lblUsuario1" Text="" FontSize="30" TextColor="Black" HorizontalOptions="Center"/>
+
+            <Label x:Name="lblNombreEstudiante" Text="" FontSize="25" TextColor="Black" HorizontalOptions="Center"/>
+
+            <Label x:Name="lblTotal" Text="" FontSize="30" TextColor="Black" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LissetteAguaizaExamen.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="260"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="lblUsuario" Text="" FontSize="15" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Curso online para estudiantes" FontSize="20" TextColor="Black"
+                           VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1"/>
+
+                    <Entry x:Name="txtNombre" Placeholder="Ingrese su nombre" BackgroundColor="White" Grid.Row="3" Grid.Column="1"
+                           VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+                    <Label Text="El cosot de este curso es de 3000 dolares. Para inscribirse a este curso usted debe realizar un pago inicial" FontSize="15" 
+                           TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1"/>
+
+                    <Entry x:Name="txtPagoInicial" Placeholder="Ingrese su pago inicial" 
+                           BackgroundColor="White" VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="Center" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
+
+                    <Label x:Name="lblPagomen" Text="el pago mensual es de " Grid.Row="5" Grid.Column="1"/>
+
+                    <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" TextColor="Black" Grid.Row="6" Grid.Column="1"/>
+
+                    <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" TextColor="Black" Grid.Row="7" Grid.Column="1"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
